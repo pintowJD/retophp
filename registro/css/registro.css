@@ -1,0 +1,85 @@
+body{
+ background-color: #c1bdba;
+
+
+}
+
+.centro{
+  background-color: #24323d;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+
+.botones{
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left:20px;
+}
+
+.Boton1{
+  background: transparent;
+  border: 2px solid #0099CC;
+  width: 100px;
+  height: 50px;
+  left: 0px;
+  transition: all .5s ease;
+}
+.Boton1:hover{
+  transform: scale(1.2,1.2);
+  background:  white;
+}
+
+.Boton2{
+  background: transparent;
+  border: 2px solid #0099CC;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  right: 0px;
+  transition: all .5s ease;
+}
+.Boton2:hover{
+  transform: scale(1.2,1.2);
+  background:  white;
+}
+.campos{
+  position: absolute;
+  left: 25%;
+  height: 600px;
+  width: 350px;
+  left: 20%;
+}
+
+.datos{
+  position: absolute;
+  top: 10%;
+  height: 480px;
+  width: 350px;
+}
+
+.llenar{
+  text-align: center;
+
+}
+
+
+ input{
+  color: white;
+  size:23px;
+ 	border-radius: 15px;
+ 	background-color: inherit;
+ 	border:1.5px solid #29c;
+ 	text-align: center;
+ 	box-shadow: none;
+  width: 200px;
+  height: 30px;
+
+ }
+ input:focus{
+ 	outline: 0px;
+ }
