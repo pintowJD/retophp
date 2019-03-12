@@ -19,9 +19,15 @@
 	if ($consulta_email_array['correo']==$Correo || $consulta_email_array['numero_de_documento']==$Numero_de_documento) {
 			header("location:../sesion_ocupada.html");
 	}
-	if ($consulta_email_array['correo']!=$Correo) {
-		// ENVIAR DATOS
-		$enviar_datos = mysqli_query($link,"INSERT INTO usuarios VALUES ('','$Nombre','$Apellido','$Correo','$Password','$Numero_de_celular','$Numero_de_documento','$Acudiente' )") or die ("<h2>Error de envio de datos</h2>");
+
+//VERIFICAR CONTRASEÑA
+
+
+//ENCRIPTAR CONTRASEÑA
+$Password_encriptada=password_hash("$Password", PASSWORD_DEFAULT);
+ // ENVIAR DATOS
+	if ($consulta_email_array['correo']!=$Correo && $consulta_email_array['numero_de_documento']!=$Numero_de_documento) {
+		$enviar_datos = mysqli_query($link,"INSERT INTO usuarios VALUES ('','$Nombre','$Apellido','$Correo','$Password_encriptada','$Numero_de_celular','$Numero_de_documento','$Acudiente' )") or die ("<h2>Error de envio de datos</h2>");
 		 header("location:../registrado.html");
 	}
 

@@ -7,6 +7,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="../css/consulta_t.css">
 </head>
 <body>
 	<div>
@@ -33,12 +34,9 @@
 					echo "<td>".$consulta['numero_de_celular']."</td>";
 					echo "<td>".$consulta['numero_de_documento']."</td>";
 					echo "<td>".$consulta['acudiente']."</td>";
-
 					echo "</tr>";
 					}
 ?>
-
-
  		 	</table>
 
 
