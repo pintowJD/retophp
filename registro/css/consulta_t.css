@@ -1,3 +1,126 @@
-body{
+ body{
   background-color: silver;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #24323d;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table-head th{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+ tr {
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #0099CC;
+  background-color: #454545;
+  cursor: pointer;
+}
+
+.editar_y_eliminar{
+  position: relative;
+  left: 80px;
+  width: 220px;
+  height: 100%;
+}
+
+.editar{
+  background: transparent;
+  border: 2px solid #0099CC;
+  width: 100px;
+  height: 50px;
+  left: 0px;
+  transition: all .5s ease;
+}
+.editar:hover{
+  transform: scale(1.2,1.2);
+  background: white;
+  cursor: pointer;
+}
+.eliminar{
+  background: transparent;
+  border: 2px solid #0099CC;
+  width: 100px;
+  height: 50px;
+  left: 0px;
+  transition: all .5s ease;
+}
+.eliminar:hover{
+  transform: scale(1.2,1.2);
+  background: white;
+  cursor: pointer;
+}
+
+.Volver {
+  background: transparent;
+  border: 2px solid #0099CC;
+  width: 100px;
+  height: 50px;
+  left: 0px;
+  transition: all .5s ease;
+}
+.volver:hover{
+  transform: scale(1.1,1.1);
+  background: white;
+  cursor: pointer;
+}
+a{
+text-decoration: none;
+}
+a:visited{
+  color: #000000;
+}
+a:link{
+  color: #000000;
 }
